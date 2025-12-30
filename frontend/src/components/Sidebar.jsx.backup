@@ -19,7 +19,13 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { useDevices } from "@/hooks/useDevices";
+
+const DEVICES = [
+  { id: "all", name: "Alle Pressen", model: "Aggregiert" },
+  { id: "47200413", name: "7K", model: "HP Indigo 7K" },
+  { id: "47100144", name: "7900", model: "HP Indigo 7900" },
+  { id: "47100122", name: "9129", model: "HP Indigo 9129" },
+];
 
 const navItems = [
   { path: "/", label: "Dashboard", icon: LayoutDashboard },
@@ -32,14 +38,6 @@ const navItems = [
 ];
 
 export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLogout }) {
-  const { devices } = useDevices();
-
-  // Kombiniere "Alle Pressen" mit API-Geräten
-  const allDevices = [
-    { device_id: "all", name: "Alle Pressen", model: "Aggregiert" },
-    ...devices
-  ];
-
   return (
     <aside 
       className="fixed left-0 top-0 h-screen w-64 bg-slate-900 border-r border-slate-800 flex flex-col z-50"
@@ -89,15 +87,15 @@ export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLog
             <SelectValue placeholder="Wähle ein Gerät" />
           </SelectTrigger>
           <SelectContent className="bg-slate-800 border-slate-700">
-            {allDevices.map((device) => (
+            {DEVICES.map((device) => (
               <SelectItem 
-                key={device.device_id} 
-                value={device.device_id}
+                key={device.id} 
+                value={device.id}
                 className="text-white hover:bg-slate-700 focus:bg-slate-700"
               >
                 <div className="flex flex-col">
                   <span className="font-medium">{device.name}</span>
-                  <span className="text-xs text-slate-400">{device.model || device.device_id}</span>
+                  <span className="text-xs text-slate-400">{device.model}</span>
                 </div>
               </SelectItem>
             ))}
