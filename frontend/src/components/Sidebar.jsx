@@ -90,17 +90,14 @@ export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLog
           </SelectTrigger>
           <SelectContent className="bg-slate-800 border-slate-700">
             {allDevices.map((device) => (
-              <SelectItem 
-                key={device.id}    // ← RICHTIG!
-    value={device.id}  // ← RICHTIG!
-                className="text-white hover:bg-slate-700 focus:bg-slate-700"
-              >
-                <div className="flex flex-col">
-                  <span className="font-medium">{device.name}</span>
-                  <span className="text-xs text-slate-400">{device.model || device.device_id}</span>
-                </div>
-              </SelectItem>
-            ))}
+  <SelectItem
+    key={device.id}
+    value={device.id}
+    className="text-white hover:bg-slate-700 focus:bg-slate-700"
+  >
+    {device.name}
+  </SelectItem>
+))}
           </SelectContent>
         </Select>
       </div>
