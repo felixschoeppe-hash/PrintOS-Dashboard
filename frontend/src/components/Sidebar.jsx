@@ -74,33 +74,33 @@ export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLog
       )}
 
       {/* Device Selector */}
-      <div className="p-4 border-b border-slate-800">
-        <label className="text-xs text-slate-400 uppercase tracking-wider mb-2 block">
-          Gerät auswählen
-        </label>
-        <Select 
-          value={selectedDevice} 
-          onValueChange={setSelectedDevice}
-        >
-          <SelectTrigger 
-            className="w-full bg-slate-800 border-slate-700 text-white"
-            data-testid="device-selector"
-          >
-            <SelectValue placeholder="Wähle ein Gerät" />
-          </SelectTrigger>
-          <SelectContent className="bg-slate-800 border-slate-700">
-            {allDevices.map((device) => (
-  <SelectItem
-    key={device.id}
-    value={device.id}
-    className="text-white hover:bg-slate-700 focus:bg-slate-700"
+<div className="p-4 border-b border-slate-800">
+  <label className="text-xs text-slate-400 uppercase tracking-wider mb-2 block">
+    Gerät auswählen
+  </label>
+  <Select 
+    value={selectedDevice} 
+    onValueChange={setSelectedDevice}
   >
-    {device.name}
-  </SelectItem>
-))}
-          </SelectContent>
-        </Select>
-      </div>
+    <SelectTrigger 
+      className="w-full bg-slate-800 border-slate-700 text-white"
+      data-testid="device-selector"
+    >
+      <SelectValue />
+    </SelectTrigger>
+    <SelectContent className="bg-slate-800 border-slate-700">
+      {allDevices.map((device) => (
+        <SelectItem
+          key={device.id}
+          value={device.id}
+          className="text-white hover:bg-slate-700 focus:bg-slate-700"
+        >
+          {device.name}
+        </SelectItem>
+      ))}
+    </SelectContent>
+  </Select>
+</div>
 
       {/* Navigation */}
       <nav className="flex-1 p-4 overflow-auto">
