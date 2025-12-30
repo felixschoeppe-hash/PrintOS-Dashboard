@@ -16,7 +16,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API_URL = 'https://printos-backend.onrender.com/api';
 
 export default function Login({ onLogin }) {
   const [mode, setMode] = useState("login"); // "login" or "register"
