@@ -28,17 +28,12 @@ import {
   ResponsiveContainer,
   Legend
 } from "recharts";
+import { useDevices } from "@/hooks/useDevices";
 
 const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
-const DEVICE_NAMES = {
-  "47200413": "7K",
-  "47100144": "7900", 
-  "47100122": "9129",
-  "all": "Alle Pressen"
-};
-
 export default function Dashboard({ selectedDevice }) {
+  const { deviceNames } = useDevices();
   const [stats, setStats] = useState(null);
   const [performance, setPerformance] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -193,7 +188,7 @@ export default function Dashboard({ selectedDevice }) {
             Dashboard
           </h1>
           <p className="text-slate-400 mt-1">
-            {DEVICE_NAMES[selectedDevice]} - Produktionsübersicht
+            {deviceNames[selectedDevice]} - Produktionsübersicht
           </p>
         </div>
         <div className="flex items-center gap-4">

@@ -16,12 +16,7 @@ import { Badge } from "@/components/ui/badge";
 
 const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
-const DEVICE_NAMES = {
-  "47200413": "7K",
-  "47100144": "7900",
-  "47100122": "9129",
-  "all": "Alle Pressen"
-};
+
 
 const DEVICE_MODELS = {
   "47200413": "HP Indigo 7K",
@@ -30,6 +25,7 @@ const DEVICE_MODELS = {
 };
 
 export default function LiveStatus({ selectedDevice }) {
+  const { deviceNames } = useDevices();
   const [realtimeData, setRealtimeData] = useState({});
   const [loading, setLoading] = useState(true);
   const [lastUpdate, setLastUpdate] = useState(null);
@@ -141,7 +137,7 @@ export default function LiveStatus({ selectedDevice }) {
             Live Status
           </h1>
           <p className="text-slate-400 mt-1">
-            {DEVICE_NAMES[selectedDevice]} - Echtzeit-Überwachung
+            {deviceNames[selectedDevice]} - Echtzeit-Überwachung
           </p>
         </div>
         <div className="flex items-center gap-4">
@@ -179,7 +175,7 @@ export default function LiveStatus({ selectedDevice }) {
                     <div className={`w-3 h-3 rounded-full ${getStatusBg(data.pressState)} ${data.pressState === "PRINTING" ? "animate-pulse" : ""}`} />
                     <div>
                       <CardTitle className="text-xl font-bold text-white">
-                        {DEVICE_NAMES[devId]}
+                        {deviceNames[devId]}
                       </CardTitle>
                       <p className="text-sm text-slate-400">{DEVICE_MODELS[devId]}</p>
                     </div>

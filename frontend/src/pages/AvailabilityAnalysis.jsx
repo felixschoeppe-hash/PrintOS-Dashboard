@@ -25,17 +25,14 @@ import {
   BarChart,
   Bar
 } from "recharts";
+import { useDevices } from "@/hooks/useDevices";
 
 const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
-const DEVICE_NAMES = {
-  "47200413": "7K",
-  "47100144": "7900",
-  "47100122": "9129",
-  "all": "Alle Pressen"
-};
+
 
 export default function AvailabilityAnalysis({ selectedDevice }) {
+  const { deviceNames } = useDevices();
   const [analysisData, setAnalysisData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [dateRange, setDateRange] = useState({ from: null, to: null });
@@ -88,7 +85,7 @@ export default function AvailabilityAnalysis({ selectedDevice }) {
             Availability Analysis
           </h1>
           <p className="text-slate-400 mt-1">
-            {DEVICE_NAMES[selectedDevice]} - Verfügbarkeits- und Fehleranalyse
+            {deviceNames[selectedDevice]} - Verfügbarkeits- und Fehleranalyse
           </p>
         </div>
         <div className="flex items-center gap-4">

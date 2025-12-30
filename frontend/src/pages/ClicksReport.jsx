@@ -39,6 +39,7 @@ import {
   ResponsiveContainer,
   Legend
 } from "recharts";
+import { useDevices } from "@/hooks/useDevices";
 
 const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
@@ -50,14 +51,10 @@ const COLORS = {
   "Unknown": "#64748b"
 };
 
-const DEVICE_NAMES = {
-  "47200413": "7K",
-  "47100144": "7900",
-  "47100122": "9129",
-  "all": "Alle Pressen"
-};
+
 
 export default function ClicksReport({ selectedDevice }) {
+  const { deviceNames } = useDevices();
   const [report, setReport] = useState(null);
   const [trend, setTrend] = useState([]);
   const [yoyData, setYoyData] = useState(null);
@@ -273,7 +270,7 @@ export default function ClicksReport({ selectedDevice }) {
             Clicks Report
           </h1>
           <p className="text-slate-400 mt-1">
-            {DEVICE_NAMES[selectedDevice]} - Abrechnungsübersicht (SRA3 Format)
+            {deviceNames[selectedDevice]} - Abrechnungsübersicht (SRA3 Format)
             <span className="ml-2 text-xs bg-slate-800 px-2 py-1 rounded">
               Quelle: {getDataSourceLabel()}
             </span>

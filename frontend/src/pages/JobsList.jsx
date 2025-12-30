@@ -34,12 +34,7 @@ import {
 
 const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
-const DEVICE_NAMES = {
-  "47200413": "7K",
-  "47100144": "7900",
-  "47100122": "9129",
-  "all": "Alle Pressen"
-};
+
 
 const STATUS_STYLES = {
   "PRINTED": "bg-teal-500/10 text-teal-400 border-teal-500/30",
@@ -56,6 +51,7 @@ const CATEGORY_STYLES = {
 };
 
 export default function JobsList({ selectedDevice }) {
+  const { deviceNames } = useDevices();
   const [jobs, setJobs] = useState([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
@@ -135,7 +131,7 @@ export default function JobsList({ selectedDevice }) {
             Jobs Liste
           </h1>
           <p className="text-slate-400 mt-1">
-            {DEVICE_NAMES[selectedDevice]} - {total} Jobs gefunden
+            {deviceNames[selectedDevice]} - {total} Jobs gefunden
           </p>
         </div>
         
@@ -269,7 +265,7 @@ export default function JobsList({ selectedDevice }) {
                         {job.job_name || "-"}
                       </TableCell>
                       <TableCell className="text-slate-300 font-mono">
-                        {DEVICE_NAMES[job.press_id] || job.press_id}
+                        {deviceNames[job.press_id] || job.press_id}
                       </TableCell>
                       <TableCell className="text-slate-300 font-mono text-sm">
                         {formatDate(job.submit_time)}
