@@ -5,7 +5,7 @@ const API_URL = 'https://printos-backend.onrender.com/api';
 
 export const useDevices = () => {
   const [devices, setDevices] = useState([]);
-  const [deviceNames, setDeviceNames] = useState({});
+  const [deviceNames, setDeviceNames] = useState({ 'all': 'Alle Pressen' });
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -15,25 +15,43 @@ export const useDevices = () => {
   const fetchDevices = async () => {
     try {
       const token = localStorage.getItem('token');
+      if (!token) {
+        setLoading(false);
+        return;
+      }
+
       const response = await axios.get(API_URL + '/settings/devices', {
         headers: { Authorization: 'Bearer ' + token }
       });
 
-      setDevices(response.data.devices || []);
-      
-      // Erstelle deviceNames Object: { "47200413": "Custom Name", ... }
-      const names = {};
-      if (response.data.devices) {
-        response.data.devices.forEach(device => {
-          names[device.device_id] = device.name || device.device_id;
-        });
+      // Handle different response formats
+      let deviceList = [];
+      if (response.data) {
+        if (Array.isArray(response.data)) {
+          deviceList = response.data;
+        } else if (Array.isArray(response.data.devices)) {
+          deviceList = response.data.devices;
+        } else if (response.data.devices && typeof response.data.devices === 'object') {
+          // If devices is an object, convert to array
+          deviceList = Object.values(response.data.devices);
+        }
       }
-      names['all'] = 'Alle Pressen';
+
+      setDevices(deviceList);
+      
+      // Create deviceNames object
+      const names = { 'all': 'Alle Pressen' };
+      deviceList.forEach(device => {
+        if (device && device.device_id) {
+          names[device.device_id] = device.name || device.device_id;
+        }
+      });
       
       setDeviceNames(names);
     } catch (error) {
       console.error('Error loading devices:', error);
-      // Fallback zu leeren Namen
+      // Set empty array on error
+      setDevices([]);
       setDeviceNames({ 'all': 'Alle Pressen' });
     } finally {
       setLoading(false);
