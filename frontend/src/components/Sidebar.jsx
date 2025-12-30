@@ -36,7 +36,7 @@ export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLog
 
   // Kombiniere "Alle Pressen" mit API-Geräten
   const allDevices = [
-    { device_id: "all", name: "Alle Pressen", model: "Aggregiert" },
+  { id: "all", name: "Alle Pressen", model: "Aggregiert" },  // ← "id" statt "device_id"
     ...devices
   ];
 
@@ -91,8 +91,8 @@ export default function Sidebar({ selectedDevice, setSelectedDevice, user, onLog
           <SelectContent className="bg-slate-800 border-slate-700">
             {allDevices.map((device) => (
               <SelectItem 
-                key={device.device_id} 
-                value={device.device_id}
+                key={device.id}    // ← RICHTIG!
+    value={device.id}  // ← RICHTIG!
                 className="text-white hover:bg-slate-700 focus:bg-slate-700"
               >
                 <div className="flex flex-col">

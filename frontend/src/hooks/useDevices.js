@@ -41,11 +41,11 @@ export const useDevices = () => {
       
       // Create deviceNames object
       const names = { 'all': 'Alle Pressen' };
-      deviceList.forEach(device => {
-        if (device && device.device_id) {
-          names[device.device_id] = device.name || device.device_id;
-        }
-      });
+deviceList.forEach(device => {
+  if (device && device.id) {  // ← RICHTIG!
+    names[device.id] = device.name || device.id;
+  }
+});
       
       setDeviceNames(names);
     } catch (error) {
