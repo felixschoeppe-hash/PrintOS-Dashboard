@@ -24,30 +24,32 @@ export const useDevices = () => {
         headers: { Authorization: 'Bearer ' + token }
       });
 
-      // Handle different response formats
-      let deviceList = [];
-      if (response.data) {
-        if (Array.isArray(response.data)) {
-          deviceList = response.data;
-        } else if (Array.isArray(response.data.devices)) {
-          deviceList = response.data.devices;
-        } else if (response.data.devices && typeof response.data.devices === 'object') {
-          // If devices is an object, convert to array
-          deviceList = Object.values(response.data.devices);
-        }
-      }
+// Handle different response formats
+let deviceList = [];
+if (response.data) {
+  if (Array.isArray(response.data)) {
+    deviceList = response.data;
+  } else if (Array.isArray(response.data.device_list)) {
+    // ← FIX: API returns "device_list" not "devices"!
+    deviceList = response.data.device_list;
+  } else if (Array.isArray(response.data.devices)) {
+    deviceList = response.data.devices;
+  } else if (response.data.devices && typeof response.data.devices === 'object') {
+    deviceList = Object.values(response.data.devices);
+  }
+}
 
-      setDevices(deviceList);
-      
-      // Create deviceNames object
-      const names = { 'all': 'Alle Pressen' };
+setDevices(deviceList);
+
+// Create deviceNames object
+const names = { 'all': 'Alle Pressen' };
 deviceList.forEach(device => {
-  if (device && device.id) {  // ← RICHTIG!
+  if (device && device.id) {
     names[device.id] = device.name || device.id;
   }
 });
-      
-      setDeviceNames(names);
+
+setDeviceNames(names);
     } catch (error) {
       console.error('Error loading devices:', error);
       // Set empty array on error
