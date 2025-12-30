@@ -40,7 +40,7 @@ import {
   Legend
 } from "recharts";
 
-const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
 const COLORS = {
   "1 Color": "#06b6d4",

@@ -29,7 +29,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 
-const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
 // URL to the Python script for download
 const PYTHON_SCRIPT_URL = "https://customer-assets.emergentagent.com/job_780f423f-33d7-4575-8f0c-1dd9c8d51e1e/artifacts/38ttw7v7_complete_job_analytics_30sec_OFFICIAL_interactive.py";

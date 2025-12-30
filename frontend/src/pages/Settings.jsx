@@ -29,7 +29,7 @@ import {
   AlertDescription,
 } from "@/components/ui/alert";
 
-const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API_URL = `${'https://printos-backend.onrender.com'}/api`;
 
 export default function Settings() {
   // Credentials state
