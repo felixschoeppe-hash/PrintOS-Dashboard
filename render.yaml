@@ -1,0 +1,39 @@
+services:
+  # Backend Service (FastAPI)
+  - type: web
+    name: printos-backend
+    env: python
+    region: frankfurt
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.0
+      - key: MONGO_URL
+        sync: false  # Manuell über Render UI setzen
+      - key: DB_NAME
+        value: printos_dashboard
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: ENCRYPTION_SECRET
+        generateValue: true
+      - key: HP_PRINTOS_BASE_URL
+        value: https://printos.api.hp.com/printbeat
+
+  # Frontend Service (React)
+  - type: web
+    name: printos-frontend
+    env: static
+    region: frankfurt
+    buildCommand: cd frontend && yarn install && yarn build
+    staticPublishPath: ./frontend/build
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+      - key: REACT_APP_API_URL
+        value: https://printos-backend.onrender.com

@@ -1,0 +1,144 @@
+{
+  "design_system": {
+    "typography": {
+      "font_family": {
+        "headings": "Manrope, sans-serif",
+        "body": "IBM Plex Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-semibold tracking-tight",
+        "body_large": "text-lg leading-relaxed",
+        "body_default": "text-base leading-relaxed",
+        "caption": "text-sm text-muted-foreground",
+        "mono_data": "font-mono text-sm tracking-wide"
+      }
+    },
+    "colors": {
+      "theme": "dark",
+      "palette": {
+        "background": {
+          "default": "bg-slate-950",
+          "card": "bg-slate-900/50",
+          "surface": "bg-slate-900"
+        },
+        "primary": {
+          "default": "bg-cyan-500",
+          "foreground": "text-slate-950",
+          "hover": "hover:bg-cyan-400"
+        },
+        "status": {
+          "success": "text-teal-500",
+          "success_bg": "bg-teal-500/10",
+          "error": "text-rose-500",
+          "error_bg": "bg-rose-500/10",
+          "warning": "text-amber-500",
+          "warning_bg": "bg-amber-500/10",
+          "info": "text-sky-500",
+          "info_bg": "bg-sky-500/10"
+        },
+        "data_visualization": {
+          "cyan": "#06b6d4",
+          "magenta": "#d946ef",
+          "yellow": "#eab308",
+          "key": "#f8fafc",
+          "epm": "#8b5cf6"
+        },
+        "border": {
+          "default": "border-slate-800",
+          "active": "border-cyan-500/50"
+        }
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": "backdrop-blur-xl bg-slate-950/70 border border-white/10",
+      "neon_glow": "shadow-[0_0_20px_-5px_rgba(6,182,212,0.3)]",
+      "grid_background": "bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]",
+      "border_radius": "rounded-none md:rounded-sm"
+    },
+    "layout": {
+      "container": "max-w-[1600px] mx-auto p-6 md:p-8",
+      "grid_dashboard": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+      "spacing": {
+        "section_gap": "gap-8",
+        "card_padding": "p-6"
+      }
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "border border-slate-800 bg-slate-900/40 backdrop-blur-sm hover:border-slate-700 transition-colors duration-300",
+      "header": "flex flex-row items-center justify-between space-y-0 pb-2",
+      "content": "text-2xl font-bold"
+    },
+    "buttons": {
+      "primary": "bg-cyan-500 text-slate-950 hover:bg-cyan-400 font-semibold shadow-[0_0_15px_-3px_rgba(6,182,212,0.4)] rounded-sm",
+      "secondary": "bg-slate-800 text-slate-200 hover:bg-slate-700 border border-slate-700 rounded-sm",
+      "ghost": "hover:bg-slate-800 hover:text-cyan-400 text-slate-400"
+    },
+    "charts": {
+      "library": "recharts",
+      "style": "stroke-2",
+      "tooltip": "bg-slate-900 border-slate-800 text-slate-200"
+    },
+    "tables": {
+      "wrapper": "rounded-md border border-slate-800 overflow-hidden",
+      "header": "bg-slate-900 text-slate-400 uppercase text-xs tracking-wider font-mono",
+      "row": "hover:bg-slate-800/50 border-b border-slate-800/50 transition-colors"
+    }
+  },
+  "assets": {
+    "images": {
+      "printer_7k": "https://images.pexels.com/photos/6620963/pexels-photo-6620963.jpeg",
+      "printer_7900": "https://images.pexels.com/photos/8555251/pexels-photo-8555251.jpeg",
+      "printer_9129": "https://images.pexels.com/photos/8554384/pexels-photo-8554384.jpeg",
+      "factory_bg": "https://images.pexels.com/photos/9242907/pexels-photo-9242907.jpeg"
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "stroke-[1.5px]"
+    }
+  },
+  "pages": {
+    "dashboard": {
+      "layout": "control_room_grid",
+      "sections": [
+        "status_cards",
+        "production_chart",
+        "device_selector"
+      ]
+    },
+    "clicks_report": {
+      "layout": "split_view",
+      "sections": [
+        "filters_sidebar",
+        "data_visualization_main"
+      ]
+    },
+    "jobs_list": {
+      "layout": "full_width_table",
+      "features": [
+        "search_bar",
+        "status_filters",
+        "pagination"
+      ]
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Manrope' for all headings and 'IBM Plex Sans' for body text.",
+    "Use 'JetBrains Mono' for all numerical data, IDs, and codes.",
+    "Strict Dark Mode: Background is Slate-950. Do not use white backgrounds.",
+    "Primary Action Color: Cyan-500 (#06b6d4).",
+    "Positive/Success Color: Teal-500 (#14b8a6) (As requested).",
+    "Error/Failure Color: Rose-500 (#f43f5e) (As requested).",
+    "Use 'Control Room' density: Compact spacing, visible borders, high contrast.",
+    "Charts must use the CMYK-inspired palette (Cyan, Magenta, Yellow, Key/White).",
+    "All interactive elements must have a `data-testid` attribute.",
+    "Do not use rounded corners larger than 'rounded-sm' or 'rounded-md'. Keep it industrial.",
+    "Use 'sonner' for toast notifications.",
+    "Components are in .jsx format (not .tsx).",
+    "Avoid gradients for backgrounds; use solid colors or subtle noise textures."
+  ]
+}

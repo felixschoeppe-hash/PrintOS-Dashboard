@@ -1,0 +1,13 @@
+
+# Environment files
+.env
+.env.local
+.env.production.local
+backend/.env
+frontend/.env.local
+
+# Render
+.render
+
+# Secrets
+secrets.txt

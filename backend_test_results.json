@@ -1,0 +1,4160 @@
+{
+  "total_tests": 22,
+  "passed_tests": 21,
+  "failed_tests": 1,
+  "success_rate": 95.5,
+  "test_results": [
+    {
+      "test": "Root API endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "message": "HP PrintOS Dashboard API",
+        "version": "1.0.0"
+      }
+    },
+    {
+      "test": "Root endpoint structure",
+      "success": true,
+      "details": "Contains message and version",
+      "response_data": null
+    },
+    {
+      "test": "Devices list endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": [
+        {
+          "id": "47200413",
+          "name": "7K",
+          "model": "HP Indigo 7K",
+          "status": "Ready",
+          "speed": null,
+          "last_updated": null
+        },
+        {
+          "id": "47100144",
+          "name": "7900",
+          "model": "HP Indigo 7900",
+          "status": "Ready",
+          "speed": null,
+          "last_updated": null
+        },
+        {
+          "id": "47100122",
+          "name": "9129",
+          "model": "HP Indigo 9129",
+          "status": "Ready",
+          "speed": null,
+          "last_updated": null
+        }
+      ]
+    },
+    {
+      "test": "Devices count",
+      "success": true,
+      "details": "Found 3 devices",
+      "response_data": null
+    },
+    {
+      "test": "Device 1 structure",
+      "success": true,
+      "details": "Device: 7K (HP Indigo 7K)",
+      "response_data": null
+    },
+    {
+      "test": "Device 2 structure",
+      "success": true,
+      "details": "Device: 7900 (HP Indigo 7900)",
+      "response_data": null
+    },
+    {
+      "test": "Device 3 structure",
+      "success": true,
+      "details": "Device: 9129 (HP Indigo 9129)",
+      "response_data": null
+    },
+    {
+      "test": "Stats overview endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "total_jobs": 100,
+        "total_impressions": 52108,
+        "printed_jobs": 71,
+        "aborted_jobs": 29,
+        "success_rate": 71.0
+      }
+    },
+    {
+      "test": "Stats overview structure",
+      "success": true,
+      "details": "Jobs: 100, Impressions: 52108, Success: 71.0%",
+      "response_data": null
+    },
+    {
+      "test": "Jobs list endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "jobs": [
+          {
+            "marker": 631135733,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 351,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232603_T75g_4C_DUP_A [20250930-081526].pdf",
+            "one_shot_impressions": 880,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:54:36.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 176
+              }
+            ],
+            "total_impressions": 880
+          },
+          {
+            "marker": 631135731,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 43,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 83,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232650_T75g_4C_DUP_A [20250930-083207].pdf",
+            "one_shot_impressions": 210,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:53.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 42
+              }
+            ],
+            "total_impressions": 210
+          },
+          {
+            "marker": 631135732,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232583_T75g_4C_A [20250930-075651].pdf",
+            "one_shot_impressions": 124,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:20.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 31
+              }
+            ],
+            "total_impressions": 124
+          },
+          {
+            "marker": 631135734,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 110,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 217,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232621_T75g_4C_DUP_A [20250930-075115].pdf",
+            "one_shot_impressions": 545,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:47:48.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 109
+              }
+            ],
+            "total_impressions": 545
+          },
+          {
+            "marker": 631135735,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 33,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 63,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 160,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:46:31.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 32
+              }
+            ],
+            "total_impressions": 160
+          },
+          {
+            "marker": 631123782,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 264,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 660,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-30T08:40:19.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 132
+              }
+            ],
+            "total_impressions": 660
+          },
+          {
+            "marker": 631135737,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 90,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_D [20250930-073138].pdf",
+            "one_shot_impressions": 445,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:36:37.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 89
+              }
+            ],
+            "total_impressions": 445
+          },
+          {
+            "marker": 631135736,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 505,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1004,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_A [20250930-073119].pdf",
+            "one_shot_impressions": 2515,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:15:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 503
+              }
+            ],
+            "total_impressions": 2515
+          },
+          {
+            "marker": 631092740,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 229,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 452,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_B [20250930-073128].pdf",
+            "one_shot_impressions": 1135,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:28.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 227
+              }
+            ],
+            "total_impressions": 1135
+          },
+          {
+            "marker": 631092741,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232635_T75g_4C_A [20250929-223802].pdf",
+            "one_shot_impressions": 104,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:01.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 104
+          },
+          {
+            "marker": 631092739,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "231437_T75g_4C_A [20250929-171611].pdf",
+            "one_shot_impressions": 1208,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:55:55.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 302
+              }
+            ],
+            "total_impressions": 1208
+          },
+          {
+            "marker": 631092743,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 251,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 252,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 251,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 501,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232528_T75g_4C_DUP_A [20250929-164831].pdf",
+            "one_shot_impressions": 1255,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:45:28.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 251
+              }
+            ],
+            "total_impressions": 1255
+          },
+          {
+            "marker": 631092744,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 27,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 51,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232534_T75g_4C_DUP_A [20250929-152919].pdf",
+            "one_shot_impressions": 130,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:44:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 130
+          },
+          {
+            "marker": 631092742,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 539,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 542,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 539,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1075,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "231437_T75g_4C_DUP_B [20250929-171614].pdf",
+            "one_shot_impressions": 2695,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:21:39.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 539
+              }
+            ],
+            "total_impressions": 2695
+          },
+          {
+            "marker": 631045987,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 244,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": false,
+            "job_name": "232602_BikeTag_4C_A [20250929-161104].pdf",
+            "one_shot_impressions": 0,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:14:24.000+00:00",
+            "substrates": [
+              {
+                "name": "Biketags",
+                "amountUsed": 61
+              }
+            ],
+            "total_impressions": 244
+          },
+          {
+            "marker": 631041217,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 417,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 834,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 417,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 832,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232233_T75g_4C_DUP_A [20250929-140459].pdf",
+            "one_shot_impressions": 2500,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:48:08.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 417
+              }
+            ],
+            "total_impressions": 2500
+          },
+          {
+            "marker": 631023138,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 10,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 20,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 10,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 20,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232233_T75g_4C_DUP_A [20250929-140459].pdf",
+            "one_shot_impressions": 60,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-30T06:47:09.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 10
+              }
+            ],
+            "total_impressions": 60
+          },
+          {
+            "marker": 631041216,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 352,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 704,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 352,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 702,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232233_T75g_4C_DUP_B [20250929-140506].pdf",
+            "one_shot_impressions": 2110,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:35:27.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 352
+              }
+            ],
+            "total_impressions": 2110
+          },
+          {
+            "marker": 631041224,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 164,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 164,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 164,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 164,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232632_T75g_4C_A [20250929-202640].pdf",
+            "one_shot_impressions": 656,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:32:42.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 164
+              }
+            ],
+            "total_impressions": 656
+          },
+          {
+            "marker": 631014695,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 87,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 87,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 87,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 87,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232632_T75g_4C_A [20250929-202640].pdf",
+            "one_shot_impressions": 348,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-30T06:30:33.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 87
+              }
+            ],
+            "total_impressions": 348
+          },
+          {
+            "marker": 631041219,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 45,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 46,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 45,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232639_T75g_4C_DUP_A [20250929-203614].pdf",
+            "one_shot_impressions": 225,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:28:40.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 45
+              }
+            ],
+            "total_impressions": 225
+          },
+          {
+            "marker": 631041222,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 62,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 61,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 121,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232645_T75g_4C_DUP_A [20250930-023158].pdf",
+            "one_shot_impressions": 305,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:26:08.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 61
+              }
+            ],
+            "total_impressions": 305
+          },
+          {
+            "marker": 631041213,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 9,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 10,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 9,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 17,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232666_T75g_4C_DUP_A [20250930-052420].pdf",
+            "one_shot_impressions": 45,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:25:46.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 9
+              }
+            ],
+            "total_impressions": 45
+          },
+          {
+            "marker": 631041225,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 8,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 9,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 8,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 15,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232666_T75g_4C_DUP_C [20250930-052429].pdf",
+            "one_shot_impressions": 40,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:25:26.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 8
+              }
+            ],
+            "total_impressions": 40
+          },
+          {
+            "marker": 631041223,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 27,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 51,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232666_T75g_4C_DUP_B [20250930-052424].pdf",
+            "one_shot_impressions": 130,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:24:24.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 130
+          },
+          {
+            "marker": 631041220,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 7,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 7,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 7,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 7,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232636_T75g_4C_A [20250929-204913].pdf",
+            "one_shot_impressions": 28,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:24:14.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 7
+              }
+            ],
+            "total_impressions": 28
+          },
+          {
+            "marker": 631041221,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 14,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 15,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 14,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 27,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232622_T75g_4C_DUP_A [20250929-172841].pdf",
+            "one_shot_impressions": 70,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:23:39.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 14
+              }
+            ],
+            "total_impressions": 70
+          },
+          {
+            "marker": 631041215,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 351,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232628_T75g_4C_DUP_A [20250929-191956].pdf",
+            "one_shot_impressions": 880,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:16:17.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 176
+              }
+            ],
+            "total_impressions": 880
+          },
+          {
+            "marker": 631041218,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 101,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 102,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 101,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 201,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232607_T75g_4C_DUP_A [20250929-162056].pdf",
+            "one_shot_impressions": 505,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:11:45.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 101
+              }
+            ],
+            "total_impressions": 505
+          },
+          {
+            "marker": 631003569,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 10,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 11,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 10,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 19,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232666_T75g_4C_DUP_D [20250930-052434].pdf",
+            "one_shot_impressions": 50,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T06:09:44.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 10
+              }
+            ],
+            "total_impressions": 50
+          },
+          {
+            "marker": 630996927,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 5,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T15:26:11.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 1
+              }
+            ],
+            "total_impressions": 5
+          },
+          {
+            "marker": 630441448,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 278,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 281,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 278,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 556,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 1393,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T15:02:51.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 279
+              }
+            ],
+            "total_impressions": 1393
+          },
+          {
+            "marker": 630413006,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 142,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 141,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 141,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 282,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 706,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T14:52:01.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 141
+              }
+            ],
+            "total_impressions": 706
+          },
+          {
+            "marker": 630405923,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 531,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 533,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 531,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1060,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 2655,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T14:28:55.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 531
+              }
+            ],
+            "total_impressions": 2655
+          },
+          {
+            "marker": 630378527,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 265,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 266,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 264,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 529,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 1324,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T14:02:59.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 265
+              }
+            ],
+            "total_impressions": 1324
+          },
+          {
+            "marker": 630358905,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 4,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 3,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 4,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 6,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 17,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T14:00:53.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 3
+              }
+            ],
+            "total_impressions": 17
+          },
+          {
+            "marker": 630358904,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 171,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 171,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 171,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 339,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 852,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T13:40:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 170
+              }
+            ],
+            "total_impressions": 852
+          },
+          {
+            "marker": 630339516,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 7,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T13:19:50.000+00:00",
+            "substrates": [],
+            "total_impressions": 7
+          },
+          {
+            "marker": 630315470,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 77,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 76,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 77,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 152,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 382,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:51:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 74
+              }
+            ],
+            "total_impressions": 382
+          },
+          {
+            "marker": 630296834,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 4,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 10,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T12:50:17.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 2
+              }
+            ],
+            "total_impressions": 10
+          },
+          {
+            "marker": 630296833,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 34,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 34,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 34,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 68,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 170,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:48:26.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 34
+              }
+            ],
+            "total_impressions": 170
+          },
+          {
+            "marker": 630296832,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 14,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 15,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 14,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 27,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 70,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:47:33.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 14
+              }
+            ],
+            "total_impressions": 70
+          },
+          {
+            "marker": 630291175,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 16,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 16,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 16,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 80,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:46:09.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 16
+              }
+            ],
+            "total_impressions": 80
+          },
+          {
+            "marker": 630291174,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 1,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 5,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T12:45:04.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 1
+              }
+            ],
+            "total_impressions": 5
+          },
+          {
+            "marker": 630291173,
+            "click_category": "Unknown",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [],
+            "is_epm": false,
+            "is_oneshot": false,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 0,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:44:49.000+00:00",
+            "substrates": [],
+            "total_impressions": 0
+          },
+          {
+            "marker": 630291172,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 28,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 28,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 28,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 56,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 140,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:40:22.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 28
+              }
+            ],
+            "total_impressions": 140
+          },
+          {
+            "marker": 630285292,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 157,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 157,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 156,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 314,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 784,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:33:22.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 157
+              }
+            ],
+            "total_impressions": 784
+          },
+          {
+            "marker": 630285291,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 297,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 298,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 297,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 593,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 1485,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-29T12:20:16.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 297
+              }
+            ],
+            "total_impressions": 1485
+          },
+          {
+            "marker": 630268587,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 2,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 4,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "228076_tyvekperfo-SG 1Abriss-rechts_4C_DUP_A [20250929-104309]1of2.pdf",
+            "one_shot_impressions": 10,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T12:19:07.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g perforiert",
+                "amountUsed": 2
+              }
+            ],
+            "total_impressions": 10
+          },
+          {
+            "marker": 630268585,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 196,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 197,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 196,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 391,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232339_T75g_4C_DUP_A [20250929-114516].pdf",
+            "one_shot_impressions": 980,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-29T12:07:31.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 196
+              }
+            ],
+            "total_impressions": 980
+          }
+        ],
+        "total": 100,
+        "page": 1,
+        "limit": 50,
+        "pages": 2
+      }
+    },
+    {
+      "test": "Jobs list structure",
+      "success": true,
+      "details": "Found 50 jobs, Total: 100, Pages: 2",
+      "response_data": null
+    },
+    {
+      "test": "Job structure",
+      "success": true,
+      "details": "Job: 232603_T75g_4C_DUP_A [20250930-081526].pdf - Multicolor",
+      "response_data": null
+    },
+    {
+      "test": "Jobs with device filter",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "jobs": [
+          {
+            "marker": 631135733,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 351,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232603_T75g_4C_DUP_A [20250930-081526].pdf",
+            "one_shot_impressions": 880,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:54:36.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 176
+              }
+            ],
+            "total_impressions": 880
+          },
+          {
+            "marker": 631135731,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 43,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 83,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232650_T75g_4C_DUP_A [20250930-083207].pdf",
+            "one_shot_impressions": 210,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:53.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 42
+              }
+            ],
+            "total_impressions": 210
+          },
+          {
+            "marker": 631135732,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232583_T75g_4C_A [20250930-075651].pdf",
+            "one_shot_impressions": 124,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:20.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 31
+              }
+            ],
+            "total_impressions": 124
+          },
+          {
+            "marker": 631135734,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 110,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 217,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232621_T75g_4C_DUP_A [20250930-075115].pdf",
+            "one_shot_impressions": 545,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:47:48.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 109
+              }
+            ],
+            "total_impressions": 545
+          },
+          {
+            "marker": 631135735,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 33,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 63,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 160,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:46:31.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 32
+              }
+            ],
+            "total_impressions": 160
+          },
+          {
+            "marker": 631123782,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 264,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 660,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-30T08:40:19.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 132
+              }
+            ],
+            "total_impressions": 660
+          },
+          {
+            "marker": 631135737,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 90,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_D [20250930-073138].pdf",
+            "one_shot_impressions": 445,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:36:37.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 89
+              }
+            ],
+            "total_impressions": 445
+          },
+          {
+            "marker": 631135736,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 505,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1004,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_A [20250930-073119].pdf",
+            "one_shot_impressions": 2515,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:15:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 503
+              }
+            ],
+            "total_impressions": 2515
+          },
+          {
+            "marker": 631092740,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 229,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 452,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_B [20250930-073128].pdf",
+            "one_shot_impressions": 1135,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:28.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 227
+              }
+            ],
+            "total_impressions": 1135
+          },
+          {
+            "marker": 631092741,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232635_T75g_4C_A [20250929-223802].pdf",
+            "one_shot_impressions": 104,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:01.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 104
+          }
+        ],
+        "total": 100,
+        "page": 1,
+        "limit": 10,
+        "pages": 10
+      }
+    },
+    {
+      "test": "Jobs with status filter",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "jobs": [
+          {
+            "marker": 631135733,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 351,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232603_T75g_4C_DUP_A [20250930-081526].pdf",
+            "one_shot_impressions": 880,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:54:36.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 176
+              }
+            ],
+            "total_impressions": 880
+          },
+          {
+            "marker": 631135731,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 43,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 83,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232650_T75g_4C_DUP_A [20250930-083207].pdf",
+            "one_shot_impressions": 210,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:53.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 42
+              }
+            ],
+            "total_impressions": 210
+          },
+          {
+            "marker": 631135732,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232583_T75g_4C_A [20250930-075651].pdf",
+            "one_shot_impressions": 124,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:20.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 31
+              }
+            ],
+            "total_impressions": 124
+          },
+          {
+            "marker": 631135734,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 110,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 217,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232621_T75g_4C_DUP_A [20250930-075115].pdf",
+            "one_shot_impressions": 545,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:47:48.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 109
+              }
+            ],
+            "total_impressions": 545
+          },
+          {
+            "marker": 631135735,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 33,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 63,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 160,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:46:31.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 32
+              }
+            ],
+            "total_impressions": 160
+          },
+          {
+            "marker": 631135737,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 90,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_D [20250930-073138].pdf",
+            "one_shot_impressions": 445,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:36:37.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 89
+              }
+            ],
+            "total_impressions": 445
+          },
+          {
+            "marker": 631135736,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 505,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1004,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_A [20250930-073119].pdf",
+            "one_shot_impressions": 2515,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:15:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 503
+              }
+            ],
+            "total_impressions": 2515
+          },
+          {
+            "marker": 631092740,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 229,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 452,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_B [20250930-073128].pdf",
+            "one_shot_impressions": 1135,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:28.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 227
+              }
+            ],
+            "total_impressions": 1135
+          },
+          {
+            "marker": 631092741,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232635_T75g_4C_A [20250929-223802].pdf",
+            "one_shot_impressions": 104,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:01.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 104
+          },
+          {
+            "marker": 631092739,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 302,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "231437_T75g_4C_A [20250929-171611].pdf",
+            "one_shot_impressions": 1208,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T07:55:55.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 302
+              }
+            ],
+            "total_impressions": 1208
+          }
+        ],
+        "total": 71,
+        "page": 1,
+        "limit": 10,
+        "pages": 8
+      }
+    },
+    {
+      "test": "Jobs with category filter",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "jobs": [
+          {
+            "marker": 631135733,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 176,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 351,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232603_T75g_4C_DUP_A [20250930-081526].pdf",
+            "one_shot_impressions": 880,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:54:36.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 176
+              }
+            ],
+            "total_impressions": 880
+          },
+          {
+            "marker": 631135731,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 43,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 42,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 83,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232650_T75g_4C_DUP_A [20250930-083207].pdf",
+            "one_shot_impressions": 210,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:53.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 42
+              }
+            ],
+            "total_impressions": 210
+          },
+          {
+            "marker": 631135732,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 31,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232583_T75g_4C_A [20250930-075651].pdf",
+            "one_shot_impressions": 124,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:52:20.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 31
+              }
+            ],
+            "total_impressions": 124
+          },
+          {
+            "marker": 631135734,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 110,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 109,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 217,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232621_T75g_4C_DUP_A [20250930-075115].pdf",
+            "one_shot_impressions": 545,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:47:48.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 109
+              }
+            ],
+            "total_impressions": 545
+          },
+          {
+            "marker": 631135735,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 33,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 32,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 63,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 160,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:46:31.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 32
+              }
+            ],
+            "total_impressions": 160
+          },
+          {
+            "marker": 631123782,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 132,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 264,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_C [20250930-073132].pdf",
+            "one_shot_impressions": 660,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "ABORTED",
+            "submit_time": "2025-09-30T08:40:19.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 132
+              }
+            ],
+            "total_impressions": 660
+          },
+          {
+            "marker": 631135737,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 90,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 89,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 177,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_D [20250930-073138].pdf",
+            "one_shot_impressions": 445,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:36:37.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 89
+              }
+            ],
+            "total_impressions": 445
+          },
+          {
+            "marker": 631135736,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 505,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 503,
+                "inkSerialNumber": "EF032A01608I4O"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 1004,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_A [20250930-073119].pdf",
+            "one_shot_impressions": 2515,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:15:23.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 503
+              }
+            ],
+            "total_impressions": 2515
+          },
+          {
+            "marker": 631092740,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 229,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 227,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 452,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232436_T75g_4C_DUP_B [20250930-073128].pdf",
+            "one_shot_impressions": 1135,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:28.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 227
+              }
+            ],
+            "total_impressions": 1135
+          },
+          {
+            "marker": 631092741,
+            "click_category": "Multicolor",
+            "error_count": 0,
+            "impressions_1_color": 0,
+            "impressions_2_colors": 0,
+            "impressions_n_colors": 0,
+            "inks": [
+              {
+                "color": "Yellow",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF052A9470Q4VQ"
+              },
+              {
+                "color": "Cyan",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF012A2928FVSC"
+              },
+              {
+                "color": "Magenta",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF032A0160R44P"
+              },
+              {
+                "color": "Black",
+                "amountUsed": 26,
+                "inkSerialNumber": "EF072A080341BK"
+              }
+            ],
+            "is_epm": false,
+            "is_oneshot": true,
+            "job_name": "232635_T75g_4C_A [20250929-223802].pdf",
+            "one_shot_impressions": 104,
+            "press_id": "47100122",
+            "print_attempts": 1,
+            "status": "PRINTED",
+            "submit_time": "2025-09-30T08:01:01.000+00:00",
+            "substrates": [
+              {
+                "name": "Tyvek 75g",
+                "amountUsed": 26
+              }
+            ],
+            "total_impressions": 104
+          }
+        ],
+        "total": 99,
+        "page": 1,
+        "limit": 10,
+        "pages": 10
+      }
+    },
+    {
+      "test": "Clicks report endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "total_impressions": 52108,
+        "one_color": 0,
+        "two_colors": 0,
+        "epm": 0,
+        "multicolor": 52108,
+        "unknown": 0,
+        "categories": [
+          {
+            "name": "Multicolor",
+            "count": 99,
+            "impressions": 52108
+          },
+          {
+            "name": "Unknown",
+            "count": 1,
+            "impressions": 0
+          }
+        ],
+        "oneshot_total": 51760,
+        "multishot_total": 348
+      }
+    },
+    {
+      "test": "Clicks report structure",
+      "success": true,
+      "details": "Total: 52108, Categories: 2",
+      "response_data": null
+    },
+    {
+      "test": "Clicks CSV export",
+      "success": true,
+      "details": "CSV export successful, 102 lines",
+      "response_data": null
+    },
+    {
+      "test": "Device 47100122 status",
+      "success": false,
+      "details": "Expected 200, got 400: {\"detail\":\"HP API error: {\\\"statusCode\\\":400,\\\"message\\\":\\\"NotFoundException\\\",\\\"moreInfoUrl\\\":null,\\\"developerInfo\\\":\\\"RESTEASY003210: Could not find resource for full path: https://printos.api.hp.com/api/PrintbeatService/externalApi/v1/Realtime/PressStatus?devices=47100122\\\",\\\"subCode\\\":0,\\\"serviceName\\\":null}\"}",
+      "response_data": null
+    },
+    {
+      "test": "Device 47100122 performance",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "device_id": "47100122",
+        "from_date": "2025-11-29",
+        "to_date": "2025-12-29",
+        "resolution": "Day",
+        "data": {
+          "data": {
+            "kpiName": "Print volume",
+            "fromDate": "2025-11-29",
+            "toDate": "2025-12-29",
+            "resolution": "Day",
+            "unitEvents": [
+              {
+                "unitName": "47100122",
+                "unitInfo": "HP Indigo 7900 Digital Press",
+                "events": [
+                  {
+                    "date": "2025-11-29",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-11-30",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-01",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-02",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-03",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-04",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 9422
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-05",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 5234
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-06",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-07",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-08",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 831
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-09",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-10",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 13077
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-11",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-12",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-13",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-14",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-15",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-16",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-17",
+                    "value": {
+                      "limit": 400000.0,
+                      "value": 19327
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-18",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-19",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-20",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-21",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-22",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-23",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-24",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-25",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-26",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-27",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-28",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  },
+                  {
+                    "date": "2025-12-29",
+                    "value": {
+                      "limit": 0.0,
+                      "value": 0
+                    },
+                    "score": {
+                      "limit": 20,
+                      "value": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "unitSystem": "Metric"
+        }
+      }
+    },
+    {
+      "test": "Jobs sync endpoint",
+      "success": true,
+      "details": "Status: 200",
+      "response_data": {
+        "status": "success",
+        "jobs_synced": 100,
+        "last_marker": 634963423,
+        "message": "Synced 100 jobs. Wait 30s before next sync (API rate limit)."
+      }
+    },
+    {
+      "test": "Sync response structure",
+      "success": true,
+      "details": "Status: success, Jobs synced: 100",
+      "response_data": null
+    }
+  ]
+}

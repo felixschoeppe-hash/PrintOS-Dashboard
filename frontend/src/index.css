@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 222 47% 5%;
+        --foreground: 210 40% 98%;
+        --card: 222 47% 7%;
+        --card-foreground: 210 40% 98%;
+        --popover: 222 47% 7%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 187 79% 44%;
+        --primary-foreground: 222 47% 5%;
+        --secondary: 217 19% 15%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 217 19% 15%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 217 19% 15%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 350 89% 60%;
+        --destructive-foreground: 210 40% 98%;
+        --success: 168 76% 42%;
+        --success-foreground: 210 40% 98%;
+        --warning: 38 92% 50%;
+        --warning-foreground: 222 47% 5%;
+        --border: 217 19% 18%;
+        --input: 217 19% 18%;
+        --ring: 187 79% 44%;
+        --chart-cyan: 187 79% 44%;
+        --chart-magenta: 292 84% 61%;
+        --chart-yellow: 48 96% 53%;
+        --chart-key: 210 40% 98%;
+        --chart-epm: 263 70% 58%;
+        --radius: 0.25rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    
+    body {
+        @apply bg-slate-950 text-slate-100 antialiased;
+        font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Manrope', sans-serif;
+    }
+    
+    .font-mono, code, pre, .mono-data {
+        font-family: 'JetBrains Mono', monospace;
+    }
+}
+
+@layer components {
+    .industrial-card {
+        @apply border border-slate-800 bg-slate-900/40 backdrop-blur-sm hover:border-slate-700 transition-colors duration-300;
+    }
+    
+    .neon-glow {
+        box-shadow: 0 0 20px -5px rgba(6, 182, 212, 0.3);
+    }
+    
+    .status-printing {
+        @apply text-cyan-400 bg-cyan-500/10;
+    }
+    
+    .status-ready {
+        @apply text-teal-400 bg-teal-500/10;
+    }
+    
+    .status-error {
+        @apply text-rose-400 bg-rose-500/10;
+    }
+    
+    .status-idle {
+        @apply text-amber-400 bg-amber-500/10;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+}
+
+/* Grid background effect */
+.grid-background {
+    background-image: 
+        linear-gradient(to right, #1e293b 1px, transparent 1px),
+        linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+    background-size: 4rem 4rem;
+    mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, #000 70%, transparent 100%);
+}
